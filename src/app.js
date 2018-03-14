@@ -1,11 +1,15 @@
 var {Provider} = require('react-redux');
 var React = require('react');
-var Store = require('store');
+import NoteStore from './store/NoteStore.js'
 var ReactDom = require('react-dom');
 
-ReactDom.render(
-    <Provider store={Store}>
+import NoteContainer from './components/Index.js';
 
+ReactDom.render(
+    <Provider store={NoteStore}>
+      <NoteContainer/>
     </Provider>,
     document.getElementById('root')
   );
+
+  
