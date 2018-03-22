@@ -10,6 +10,5 @@ class NoteContainer extends React.Component{
         )
       }
 }
-
 module.exports = NoteContainer;
 

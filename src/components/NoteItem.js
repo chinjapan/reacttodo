@@ -1,9 +1,9 @@
 import React from 'react';
 import{connect} from 'react-redux';
 import {removeItem} from '../actions/Note.js';
+
 class NoteItem extends React.Component{
-   
-    removeNode(){
+    removeItem(){
         var {index,dispatch} = this.props;
         dispatch(removeItem(index)); // ben trong react-redux, nen can use connet()(NoteItem)
       }
@@ -16,6 +16,4 @@ class NoteItem extends React.Component{
         )
       }
 }
-
 module.exports = connect()(NoteItem);
-
